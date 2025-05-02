@@ -1,17 +1,12 @@
-/*
-
-Template 2097 Pop
-
-https://www.tooplate.com/view/2097-pop
-
-*/
-
 body {
+  scroll-behavior: smooth;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 19px;
   font-weight: 300;
   color: white;
   position: relative;
+  min-height: 100vh; /* Ensure full viewport height */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 h1 {
@@ -29,7 +24,8 @@ h1 {
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
-  transition: all 0.3s ease;
+  pointer-events: none;
+  transition: none;
 }
 
 #tm-bg:after {
@@ -352,41 +348,47 @@ p:last-child {
   margin-bottom: 0;
 }
 
-@media (min-width: 900px) {
-  .container {
-    max-width: 900px;
-  }
-}
-
-@media (min-width: 767px) and (max-width: 991px), (max-width: 440px) {
-  .tm-nav-link {
-    width: 145px;
-    height: 145px;
-  }
-}
-
+/* Mobile view */
 @media (max-width: 767px) {
+  #tm-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/background-mobile.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    pointer-events: none;
+    transition: none;
+    touch-action: none;
+  }
+  .tm-nav ul {
+    display: flex; /* Use Flexbox for alignment */
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    justify-content: center; /* Center the buttons horizontally */
+    padding: 0; /* Remove extra padding */
+  }
+  .tm-nav li {
+    float: none; /* Remove float to allow Flexbox to work */
+    margin: 10px; /* Add spacing between buttons */
+  }
+
+  .tm-main-content {
+    overflow-y: auto;  /* Enable vertical scrolling */
+    -webkit-overflow-scrolling: touch;  /* Smooth scroll for iOS */
+    padding-bottom: 60px;  /* To ensure content is not hidden under the footer */
+  }
+  .tm-nav-link {
+    width: 120px; /* Adjust button size for mobile */
+    height: 120px;
+  }
   .container {
     max-width: 450px;
   }
-  .content {
-    margin-left: auto;
-    margin-right: 0;
-  }
-  .tm-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-  }
-  .grid {
-    justify-content: flex-end;
-  }
-  .tm-col-email {
-    padding-left: 15px;
-  }
-  .tm-reverse-sm {
-    flex-direction: column-reverse;
-  }
+
 }
 
 @media (max-width: 544px) {
@@ -401,8 +403,8 @@ p:last-child {
   }
 
   footer {
-    position: relative;
-    bottom: 0;
+    position: bottom;
+    bottom: 15p;
   }
 }
 
