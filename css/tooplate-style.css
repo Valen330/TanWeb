@@ -350,6 +350,9 @@ p:last-child {
 
 /* Mobile view */
 @media (max-width: 767px) {
+  .grid {
+    justify-content: center;
+  }
   #tm-bg {
     position: absolute;
     top: 0;
