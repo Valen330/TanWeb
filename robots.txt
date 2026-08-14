@@ -6,4 +6,4 @@ User-agent: AdsBot-Google
 User-agent: Googlebot
 Crawl-delay: 0
 
-Sitemap: https://tanwebstudio.website/sitemap.xml
+Sitemap: https://tanwebstudio.com/sitemap.xml
