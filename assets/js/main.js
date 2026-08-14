@@ -79,7 +79,7 @@
     if (reduce || !("IntersectionObserver" in window) || document.visibilityState === "hidden") return;
 
     var targets = document.querySelectorAll(
-      ".sec .h2, .sec .lead, .vs__card, .obra, .tier, .caso__copy, .credit, .cta__box, .stats"
+      ".sec .h2, .sec .lead, .vs__card, .obra, .tier, .caso__copy, .credit, .faq__item, .cta__box, .stats"
     );
     targets.forEach(function (t) { t.classList.add("rv"); });
 

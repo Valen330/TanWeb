@@ -574,6 +574,29 @@ em{font-style:italic}
 
 @media (max-width:900px){.caso{grid-template-columns:1fr}}
 
+/* ─────────────────────────────────────────── FAQ */
+.faq{max-width:780px;margin-top:2.6rem;display:flex;flex-direction:column;gap:.7rem}
+.faq__item{
+  border:1px solid var(--line-2);background:rgba(10,21,17,.5);
+  padding:0 1.3rem
+}
+.faq__item[open]{border-color:var(--line);background:rgba(15,30,24,.7)}
+.faq__q{
+  padding:1.15rem 1.6rem 1.15rem 0;position:relative;cursor:pointer;
+  list-style:none;font-family:var(--ff-sans);font-weight:600;font-size:.98rem;
+  color:var(--paper);line-height:1.4
+}
+.faq__q::-webkit-details-marker{display:none}
+.faq__q::after{
+  content:"+";position:absolute;right:0;top:50%;transform:translateY(-50%);
+  font:400 1.3rem/1 var(--ff-mono);color:var(--gold-500)
+}
+.faq__item[open] .faq__q::after{content:"–"}
+.faq__a{margin:0 0 1.3rem;font-size:.9rem;line-height:1.6;color:var(--paper-3);max-width:64ch}
+@media (prefers-reduced-motion:no-preference){
+  .faq__item{transition:border-color .2s ease,background-color .2s ease}
+}
+
 /* ─────────────────────────────────────────── CTA */
 .cta{padding:clamp(4rem,8vw,7rem) 0 clamp(3rem,6vw,5rem);border-top:1px solid var(--line-2)}
 .cta__box{
