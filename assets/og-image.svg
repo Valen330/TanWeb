@@ -1,0 +1,102 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo: estética de plano cadastral -->
+  <rect width="1200" height="630" fill="#0A1511"/>
+
+  <!-- Grid sutil -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse" opacity="0.05">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#C69749" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Área del plano: rectángulo dorado -->
+  <rect x="80" y="60" width="480" height="510" fill="none" stroke="#C69749" stroke-width="2"/>
+
+  <!-- Manzanas simplificadas -->
+  <!-- Manzana A (5×2) -->
+  <g opacity="0.9">
+    <rect x="100" y="80" width="140" height="140" fill="none" stroke="#7FA07E" stroke-width="1.5"/>
+    <!-- 10 lotes -->
+    <rect x="100" y="80" width="28" height="70" fill="none" stroke="#7FA07E" stroke-width="0.8"/>
+    <rect x="128" y="80" width="28" height="70" fill="none" stroke="#7FA07E" stroke-width="0.8"/>
+    <rect x="156" y="80" width="28" height="70" fill="none" stroke="#7FA07E" stroke-width="0.8"/>
+    <rect x="184" y="80" width="28" height="70" fill="none" stroke="#7FA07E" stroke-width="0.8"/>
+    <rect x="212" y="80" width="28" height="70" fill="none" stroke="#7FA07E" stroke-width="0.8"/>
+    <rect x="100" y="150" width="28" height="70" fill="none" stroke="#A0483C" stroke-width="0.8"/>
+    <rect x="128" y="150" width="28" height="70" fill="none" stroke="#C69749" stroke-width="0.8"/>
+    <rect x="156" y="150" width="28" height="70" fill="none" stroke="#7FA07E" stroke-width="0.8"/>
+    <rect x="184" y="150" width="28" height="70" fill="none" stroke="#7FA07E" stroke-width="0.8"/>
+    <rect x="212" y="150" width="28" height="70" fill="none" stroke="#7FA07E" stroke-width="0.8"/>
+  </g>
+
+  <!-- Manzana B (3×2) -->
+  <g opacity="0.9">
+    <rect x="280" y="80" width="100" height="140" fill="none" stroke="#7FA07E" stroke-width="1.5"/>
+    <rect x="280" y="80" width="33" height="70" fill="none" stroke="#C69749" stroke-width="0.8"/>
+    <rect x="313" y="80" width="33" height="70" fill="none" stroke="#7FA07E" stroke-width="0.8"/>
+    <rect x="346" y="80" width="34" height="70" fill="none" stroke="#7FA07E" stroke-width="0.8"/>
+    <rect x="280" y="150" width="33" height="70" fill="none" stroke="#7FA07E" stroke-width="0.8"/>
+    <rect x="313" y="150" width="33" height="70" fill="none" stroke="#A0483C" stroke-width="0.8"/>
+    <rect x="346" y="150" width="34" height="70" fill="none" stroke="#7FA07E" stroke-width="0.8"/>
+  </g>
+
+  <!-- Manzana C (8×1) -->
+  <g opacity="0.9">
+    <rect x="410" y="80" width="140" height="70" fill="none" stroke="#7FA07E" stroke-width="1.5"/>
+    <rect x="410" y="80" width="17" height="70" fill="none" stroke="#7FA07E" stroke-width="0.8"/>
+    <rect x="427" y="80" width="17" height="70" fill="none" stroke="#7FA07E" stroke-width="0.8"/>
+    <rect x="444" y="80" width="17" height="70" fill="none" stroke="#C69749" stroke-width="0.8"/>
+    <rect x="461" y="80" width="17" height="70" fill="none" stroke="#7FA07E" stroke-width="0.8"/>
+    <rect x="478" y="80" width="18" height="70" fill="none" stroke="#A0483C" stroke-width="0.8"/>
+    <rect x="496" y="80" width="17" height="70" fill="none" stroke="#7FA07E" stroke-width="0.8"/>
+    <rect x="513" y="80" width="17" height="70" fill="none" stroke="#7FA07E" stroke-width="0.8"/>
+    <rect x="530" y="80" width="20" height="70" fill="none" stroke="#7FA07E" stroke-width="0.8"/>
+  </g>
+
+  <!-- Leyenda de colores -->
+  <g font-family="Archivo, sans-serif" font-size="11" fill="#C69749">
+    <text x="100" y="270" font-weight="600">Disponible</text>
+    <circle cx="95" cy="265" r="3" fill="#7FA07E"/>
+
+    <text x="100" y="295" font-weight="600">Reservado</text>
+    <circle cx="95" cy="290" r="3" fill="#C69749"/>
+
+    <text x="100" y="320" font-weight="600">Vendido</text>
+    <circle cx="95" cy="315" r="3" fill="#A0483C"/>
+  </g>
+
+  <!-- Secciones -->
+  <text x="100" y="360" font-family="Archivo, sans-serif" font-size="13" font-weight="600" fill="#C69749">24 lotes · 3 manzanas</text>
+  <text x="100" y="380" font-family="Archivo, sans-serif" font-size="13" font-weight="600" fill="#C69749">Hold temporal · Mapa interactivo</text>
+
+  <!-- Logo/marca derecha -->
+  <g transform="translate(720, 80)">
+    <!-- Triángulo estilizado -->
+    <path d="M 0 0 L 40 70 L 80 0 Z" fill="none" stroke="#C69749" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M 40 35 L 50 50 L 30 50 Z" fill="#C69749" opacity="0.6"/>
+  </g>
+
+  <!-- Titular -->
+  <text x="720" y="110" font-family="Fraunces, serif" font-size="48" font-weight="900" fill="#C69749">TanWeb Studio</text>
+  <text x="720" y="145" font-family="Archivo, sans-serif" font-size="18" fill="#7FA07E">Tu plano vende lotes solo</text>
+
+  <!-- Descripción -->
+  <text x="720" y="200" font-family="Archivo, sans-serif" font-size="14" fill="#D4D4D4" font-weight="500">
+    Mapa interactivo · Reserva con hold · WhatsApp IA
+  </text>
+  <text x="720" y="225" font-family="Archivo, sans-serif" font-size="14" fill="#D4D4D4" font-weight="500">
+    Para desarrolladores de loteos
+  </text>
+
+  <!-- Llamada a acción -->
+  <rect x="720" y="270" width="240" height="50" fill="#C69749" rx="4"/>
+  <text x="840" y="303" font-family="Archivo, sans-serif" font-size="16" font-weight="600" fill="#0A1511" text-anchor="middle">Conocer más</text>
+
+  <!-- Footer: números -->
+  <text x="720" y="400" font-family="IBM Plex Mono, monospace" font-size="32" font-weight="600" fill="#C69749">1.367</text>
+  <text x="720" y="425" font-family="Archivo, sans-serif" font-size="12" fill="#7FA07E" font-weight="500">lotes mapeados en producción</text>
+
+  <text x="720" y="480" font-family="IBM Plex Mono, monospace" font-size="32" font-weight="600" fill="#C69749">7</text>
+  <text x="720" y="505" font-family="Archivo, sans-serif" font-size="12" fill="#7FA07E" font-weight="500">desarrollos activos</text>
+</svg>
